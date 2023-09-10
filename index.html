@@ -85,7 +85,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap"
             rel="stylesheet"
         />
         <!-- CSS -->
@@ -93,5 +93,656 @@
         <link rel="stylesheet" href="./assets/css/base.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body></body>
+    <body>
+        <header class="header">
+            <div class="container">
+                <!-- Header Top -->
+                <div class="header-top row">
+                    <a href="/">
+                        <img
+                            src="./assets/icon/logo.svg"
+                            alt="CeloBank"
+                            class="logo"
+                        />
+                    </a>
+                    <nav class="nav">
+                        <ul class="nav__list row">
+                            <li class="nav-item">
+                                <a
+                                    href="/"
+                                    class="nav-item__link nav-item__link--active"
+                                >
+                                    Home</a
+                                >
+                            </li>
+                            <li class="nav-item">
+                                <a href="#products" class="nav-item__link">
+                                    Products
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#features" class="nav-item__link">
+                                    Features
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#blog" class="nav-item__link">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-action row">
+                        <a href="#!" class="header-action__link"> Log in </a>
+                        <a
+                            href="#!"
+                            class="header-action__link header-action__signup btn"
+                        >
+                            Sign up
+                        </a>
+                    </div>
+                </div>
+                <!-- Hero -->
+                <section class="hero">
+                    <div class="hero__inner row">
+                        <!-- Hero content -->
+                        <div class="hero__content">
+                            <p class="section-label">Digital Smart Wallet</p>
+                            <h1 class="hero__heading">
+                                Digital
+                                <b class="hero__heading-emphasize">Payment</b>
+                                For Everyone.
+                            </h1>
+                            <p class="hero__desc section-desc">
+                                We bring together eveything that’s required to
+                                build websites and apps that accept payments and
+                                send payouts globally. We are the best platform.
+                            </p>
+                            <form action="" class="hero-form">
+                                <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    placeholder="Your email address"
+                                    class="hero-form__input"
+                                />
+                                <button
+                                    type="submit"
+                                    class="hero-form__btn btn"
+                                >
+                                    Get Started
+                                </button>
+                            </form>
+                            <p class="hero-form__note">
+                                *We’ll respect the inbox and never share your
+                                email.
+                            </p>
+                        </div>
+                        <!-- Hero media -->
+                        <figure class="hero-media">
+                            <img
+                                src="./assets/img/hero.png"
+                                alt=""
+                                class="hero-media__img"
+                            />
+                            <!-- decor -->
+                            <div class="hero-media__deposit">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    fill="none"
+                                    viewBox="0 0 20 20"
+                                >
+                                    <path
+                                        stroke="#8376E2"
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        d="M1 11v8h18v-8M10 1v12m0 0 3-3m-3 3-3-3"
+                                    />
+                                </svg>
+                                <span>Deposit</span>
+                                <span class="hero-media__deposit-qty"
+                                    >$32000</span
+                                >
+                            </div>
+                            <div class="hero-media__interest">
+                                <b class="hero-media__interest-percent">0%</b>
+                                <span>Interest</span>
+                            </div>
+                            <div class="hero-media__secured">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="26"
+                                    fill="none"
+                                    viewBox="0 0 20 26"
+                                >
+                                    <path
+                                        fill="#fff"
+                                        d="M20 2.925C13.75 2.925 11.25 1.3 10 0 8.75 1.3 6.25 2.925 0 2.925v10.4C0 16.25 1.25 21.45 10 26c8.75-4.55 10-9.75 10-12.675v-10.4Z"
+                                    />
+                                    <path
+                                        fill="#439F90"
+                                        d="M10.638 18.47v.99a.54.54 0 0 1-.54.54.548.548 0 0 1-.576-.521l-.001-.019v-.972a5.232 5.232 0 0 1-3.326-1.334.673.673 0 0 1-.195-.478.77.77 0 0 1 .718-.777.74.74 0 0 1 .444.159 4.61 4.61 0 0 0 2.35 1.034v-3.536c-1.64-.441-3.352-.998-3.352-3.004 0-1.635 1.356-2.864 3.352-3.005V6.539a.54.54 0 0 1 1.082 0v1.052a4.688 4.688 0 0 1 2.775 1.113.673.673 0 0 1 .196.478.761.761 0 0 1-.763.75.659.659 0 0 1-.364-.114 4.169 4.169 0 0 0-1.835-.795v3.102c1.64.442 3.396 1.078 3.396 3.164.035 1.555-.94 3.022-3.36 3.181ZM9.521 8.952c-1.038.08-1.72.672-1.72 1.493 0 .822.753 1.114 1.72 1.397v-2.89Zm1.117 4.94v3.217c1.313-.159 1.774-.954 1.774-1.626.008-.928-.772-1.308-1.774-1.59Z"
+                                    />
+                                </svg>
+                                <div>
+                                    <span class="hero-media__secured-qty"
+                                        >$1.310</span
+                                    >
+                                    <span>SECURED FUNDS</span>
+                                </div>
+                            </div>
+                        </figure>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <main style="height: 7000px">
+            <section class="features">
+                <div class="container">
+                    <!-- row 1 -->
+                    <div class="features__inner row">
+                        <figure class="features-media">
+                            <img
+                                src="./assets/img/features-01.png"
+                                alt=""
+                                class="feature-media__img"
+                            />
+                            <div class="features-media__toast row">
+                                <i class="features-media__toast-icon">
+                                    <svg
+                                        width="12"
+                                        height="8"
+                                        viewBox="0 0 12 8"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M1 4L4.5 7.5L11 1"
+                                            stroke="#4AB5E3"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </i>
+
+                                <div class="">
+                                    <h3 class="features-media__toast-title">
+                                        Congratulations
+                                    </h3>
+                                    <p class="features-media__toast-desc">
+                                        Your account activated
+                                    </p>
+                                </div>
+                            </div>
+                        </figure>
+                        <div class="features__content">
+                            <p class="section-label">Digital Smart Wallet</p>
+                            <h2 class="section-heading">How It Works</h2>
+                            <ol class="features__list">
+                                <li class="features-item">
+                                    <h3 class="features-item__title">
+                                        Open a High Interest Checking account
+                                    </h3>
+                                    <p class="features-item__desc">
+                                        Fund your bank account with a minimum
+                                        balance of $100. Enroll in 3 minutes or
+                                        less!
+                                    </p>
+                                </li>
+                                <li class="features-item">
+                                    <h3 class="features-item__title">
+                                        10 point-of-sale transactions each Month
+                                        that are at least $10 each
+                                    </h3>
+                                    <p class="features-item__desc">
+                                        Be sure to use your rewards checking
+                                        account as often as possible in order to
+                                        accue APYI
+                                    </p>
+                                </li>
+                                <li class="features-item">
+                                    <h3 class="features-item__title">
+                                        Receive up to 5.50% APY
+                                    </h3>
+                                    <p class="features-item__desc">
+                                        The APY you earn will be based on your
+                                        account balance and satisfying the
+                                        transaction requirement.
+                                    </p>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <!-- row 2 -->
+                    <div class="features__inner row">
+                        <div class="features__content">
+                            <p class="section-label">Digital Smart Wallet</p>
+                            <h2 class="section-heading">
+                                One Card For All Your Payments
+                            </h2>
+                            <p class="features__desc section-desc">
+                                We bring together eveything that’s required to
+                                build websites and apps that accept payments and
+                                send payouts globally. We are the best platform.
+                            </p>
+                            <ul class="features__list features__list-second">
+                                <li class="features-item features-item__second">
+                                    Global Payments
+                                </li>
+                                <li class="features-item features-item__second">
+                                    One-Click Purchase
+                                </li>
+                                <li class="features-item features-item__second">
+                                    Friendly Price
+                                </li>
+                            </ul>
+                            <a href="#!" class="btn features__btn"
+                                >Get Started</a
+                            >
+                        </div>
+                        <div class="features-atm">
+                            <div class="features-atm__decor-top">
+                                <svg
+                                    class="features-atm__decor-icon"
+                                    width="160"
+                                    height="138"
+                                    viewBox="0 0 160 138"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle
+                                        cx="37.7667"
+                                        cy="67.1761"
+                                        r="70.2667"
+                                        stroke="#9487EA"
+                                    />
+                                    <circle
+                                        cx="50.6333"
+                                        cy="59.8237"
+                                        r="70.2667"
+                                        stroke="#9487EA"
+                                    />
+                                    <circle
+                                        cx="63.5"
+                                        cy="52.4713"
+                                        r="70.2667"
+                                        stroke="#9487EA"
+                                    />
+                                    <circle
+                                        cx="76.3666"
+                                        cy="45.119"
+                                        r="70.2667"
+                                        stroke="#9487EA"
+                                    />
+                                    <circle
+                                        cx="89.2333"
+                                        cy="37.7665"
+                                        r="70.2667"
+                                        stroke="#9487EA"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="features-atm__top">
+                                <span class="features-atm__title"
+                                    >Main Balance</span
+                                >
+                                <span class="features-atm__qty"
+                                    >$78,355.17</span
+                                >
+                            </div>
+                            <div class="features-atm__bottom row">
+                                <span class="features-atm__valid">
+                                    <p class="features-atm__text">VALID THUR</p>
+                                    <time class="features-atm__valid-date">
+                                        08/22
+                                    </time>
+                                </span>
+                                <span class="features-atm__name">
+                                    Md Moshqur Alam
+                                    <p class="features-atm__text">
+                                        CARD HOLDER
+                                    </p>
+                                </span>
+                            </div>
+                            <div class="features-atm__decor-bottom">
+                                <svg
+                                    class="features-atm__decor-icon"
+                                    width="205"
+                                    height="181"
+                                    viewBox="0 0 205 181"
+                                    fill="none"
+                                    xmlns="http://www.w3.org/2000/svg"
+                                >
+                                    <circle
+                                        cx="91.2989"
+                                        cy="112.415"
+                                        r="68.2015"
+                                        transform="rotate(65 91.2989 112.415)"
+                                        stroke="#6657D2"
+                                    />
+                                    <circle
+                                        cx="103.048"
+                                        cy="120.719"
+                                        r="68.2015"
+                                        transform="rotate(65 103.048 120.719)"
+                                        stroke="#6657D2"
+                                    />
+                                    <circle
+                                        cx="114.795"
+                                        cy="129.024"
+                                        r="68.2015"
+                                        transform="rotate(65 114.795 129.024)"
+                                        stroke="#6657D2"
+                                    />
+                                    <circle
+                                        cx="126.544"
+                                        cy="137.328"
+                                        r="68.2015"
+                                        transform="rotate(65 126.544 137.328)"
+                                        stroke="#6657D2"
+                                    />
+                                    <circle
+                                        cx="138.292"
+                                        cy="145.632"
+                                        r="68.2015"
+                                        transform="rotate(65 138.292 145.632)"
+                                        stroke="#6657D2"
+                                    />
+                                    <circle
+                                        cx="150.039"
+                                        cy="153.936"
+                                        r="68.2015"
+                                        transform="rotate(65 150.039 153.936)"
+                                        stroke="#6657D2"
+                                    />
+                                    <circle
+                                        cx="161.788"
+                                        cy="162.241"
+                                        r="68.2015"
+                                        transform="rotate(65 161.788 162.241)"
+                                        stroke="#6657D2"
+                                    />
+                                    <circle
+                                        cx="173.535"
+                                        cy="170.545"
+                                        r="68.2015"
+                                        transform="rotate(65 173.535 170.545)"
+                                        stroke="#6657D2"
+                                    />
+                                </svg>
+                            </div>
+                            <div class="features-atm__toast">
+                                <i class="features-atm__toast-icon">
+                                    <svg
+                                        width="20"
+                                        height="20"
+                                        viewBox="0 0 20 20"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M7.29138 14.6757V18.5404C7.29138 18.8104 7.4647 19.0495 7.72135 19.1345C7.78551 19.1553 7.85134 19.1653 7.91634 19.1653C8.11132 19.1653 8.29964 19.0737 8.41963 18.9104L10.6803 15.8339L7.29138 14.6757Z"
+                                            fill="#DA6464"
+                                        />
+                                        <path
+                                            d="M19.7361 0.115899C19.5445 -0.0199247 19.2928 -0.0382567 19.0845 0.0709021L0.335846 9.86187C0.114196 9.97769 -0.0166284 10.2143 0.00170361 10.4635C0.0208689 10.7135 0.18669 10.9268 0.422507 11.0076L5.63463 12.7892L16.7347 3.29817L8.14529 13.6466L16.8805 16.6322C16.9455 16.6539 17.0138 16.6655 17.0821 16.6655C17.1955 16.6655 17.308 16.6347 17.4071 16.5747C17.5654 16.4781 17.6729 16.3156 17.7004 16.1331L19.9919 0.717522C20.0261 0.484206 19.9278 0.252556 19.7361 0.115899Z"
+                                            fill="#DA6464"
+                                        />
+                                    </svg>
+                                </i>
+                                <div class="features-atm__toast-content">
+                                    <div class="row features-atm__toast-row">
+                                        <span class="features-atm__toast-title"
+                                            >Send Money</span
+                                        >
+                                        <span class="features-atm__toast-qty"
+                                            >- $600</span
+                                        >
+                                    </div>
+                                    <div class="row features-atm__toast-row">
+                                        <span class="features-atm__toast-text"
+                                            >Airbnb Payment</span
+                                        >
+                                        <span class="features-atm__toast-text"
+                                            >Sep 23</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="features-atm__income">
+                                <i class="features-atm__icon">
+                                    <svg
+                                        width="15"
+                                        height="15"
+                                        viewBox="0 0 15 15"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M8.53664 7.16362C10.5116 7.16362 12.1182 5.55681 12.1182 3.58181C12.1182 1.60681 10.5116 0 8.53664 0C6.56164 0 4.95483 1.60681 4.95483 3.58181C4.95483 5.55681 6.56164 7.16362 8.53664 7.16362ZM8.11246 1.47644V1.37916C8.11246 1.14473 8.30221 0.95498 8.53664 0.95498C8.77079 0.95498 8.96083 1.14473 8.96083 1.37916V1.47701C9.46561 1.58532 9.84539 2.03495 9.84539 2.57169C9.84539 2.80584 9.65536 2.99587 9.42121 2.99587C9.18678 2.99587 8.99703 2.80584 8.99703 2.57169C8.99703 2.42209 8.87514 2.30021 8.72555 2.30021H8.3452C8.1956 2.30021 8.07372 2.42209 8.07372 2.57169C8.07372 2.65737 8.11472 2.73882 8.18372 2.78972L8.53664 3.05102L9.39406 3.6856C9.67572 3.89401 9.8454 4.22742 9.84766 4.57808V4.58204C9.84964 4.88123 9.73511 5.16345 9.52471 5.37639C9.36861 5.53447 9.17349 5.64052 8.96083 5.6852V5.78446C8.96083 6.01889 8.77079 6.20864 8.53664 6.20864C8.30221 6.20864 8.11246 6.01889 8.11246 5.78446V5.68661C7.90546 5.6425 7.71514 5.54069 7.5613 5.38855C7.34836 5.17844 7.23016 4.89791 7.22846 4.59872C7.22705 4.36457 7.41567 4.17341 7.64982 4.17199H7.65264C7.88566 4.17199 8.07542 4.36033 8.07683 4.59363C8.07739 4.74003 8.19518 4.86341 8.34972 4.86341C8.5841 4.862 8.4968 4.86251 8.72951 4.86115C8.88006 4.85996 9.00045 4.73777 8.99929 4.58769V4.58373C8.99872 4.4989 8.95772 4.41802 8.88928 4.3674L8.53664 4.10639L7.67895 3.47181C7.39502 3.26141 7.22535 2.92489 7.22535 2.57169C7.22535 2.03382 7.60627 1.5839 8.11246 1.47644Z"
+                                            fill="#439F90"
+                                        />
+                                        <path
+                                            d="M2.73287 9.20172C2.62414 9.01322 2.38261 8.94764 2.19294 9.05705L0.197636 10.2088C0.00870463 10.3182 -0.0561107 10.5598 0.0529612 10.749L2.09227 14.2811C2.20143 14.47 2.44293 14.5349 2.6322 14.4258L4.6275 13.2737C4.81672 13.1646 4.88128 12.923 4.77218 12.7338L2.73287 9.20172Z"
+                                            fill="#439F90"
+                                        />
+                                        <path
+                                            d="M14.1661 8.49666C13.9741 8.22999 13.6025 8.16976 13.3361 8.36177C12.5279 8.94404 10.976 10.0622 10.8527 10.1513C10.7958 10.1996 10.7362 10.2435 10.674 10.2822C10.4299 10.4357 10.1468 10.5178 9.85133 10.5178H7.81949C7.58534 10.5178 7.3953 10.328 7.3953 10.0936C7.3953 9.85886 7.58562 9.66939 7.81949 9.66939H9.99244C10.3117 9.66939 10.5674 9.40357 10.5541 9.08373C10.5416 8.7803 10.2826 8.54502 9.97887 8.54502H8.32483C8.21285 8.42653 8.09012 8.31794 7.95862 8.22094C7.50644 7.88753 6.94765 7.69043 6.34276 7.69043C5.26731 7.69043 4.19724 8.36799 3.75354 9.27235L5.48874 12.2776H8.74364C9.38275 12.2776 10.0122 12.1141 10.5662 11.7954C10.7582 11.6851 10.9638 11.5525 11.1867 11.3924C12.1204 10.7216 14.0295 9.32806 14.031 9.32721C14.2979 9.13548 14.3584 8.76333 14.1661 8.49666Z"
+                                            fill="#439F90"
+                                        />
+                                    </svg>
+                                </i>
+                                <span class="features-atm__income-text">
+                                    Income
+                                </span>
+                                <span class="features-atm__income-qty"
+                                    >$1250</span
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <!-- row 3 -->
+                    <div class="features__inner row">
+                        <figure class="features-media features-media__last">
+                            <img
+                                src="./assets/img/features-02.png"
+                                alt=""
+                                class="feature-media__img"
+                            />
+                            <div class="features-media__social">
+                                <h3 class="features-media__social-title">
+                                    Choose payment method:
+                                </h3>
+                                <!-- Social -->
+                                <div class="features-media__social-wrap">
+                                    <a
+                                        href="#!"
+                                        class="features-media__social-icon"
+                                    >
+                                        <img
+                                            src="./assets/icon/mastercard.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a
+                                        href="#!"
+                                        class="features-media__social-icon"
+                                    >
+                                        <img
+                                            src="./assets/icon/maestro.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a
+                                        href="#!"
+                                        class="features-media__social-icon"
+                                    >
+                                        <img
+                                            src="./assets/icon/webmoney.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a
+                                        href="#!"
+                                        class="features-media__social-icon"
+                                    >
+                                        <img
+                                            src="./assets/icon/visa.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a
+                                        href="#!"
+                                        class="features-media__social-icon"
+                                    >
+                                        <img
+                                            src="./assets/icon/paypal.svg"
+                                            alt=""
+                                        />
+                                    </a>
+                                    <a
+                                        href="#!"
+                                        class="features-media__social-more"
+                                    >
+                                    </a>
+                                </div>
+                            </div>
+                        </figure>
+                        <div class="features__content">
+                            <p class="section-label">Digital Smart Wallet</p>
+                            <h2 class="section-heading">
+                                Transfer and Deposite Your Money Anytime
+                            </h2>
+                            <p class="features__desc section-desc">
+                                We bring together eveything that’s required to
+                                build websites and apps that accept payments and
+                                send payouts globally. We are the best platform.
+                            </p>
+                            <ul class="features__list features__list-second">
+                                <li class="features-item features-item__second">
+                                    Powerfull App
+                                </li>
+                                <li class="features-item features-item__second">
+                                    Transparency And Speed
+                                </li>
+                                <li class="features-item features-item__second">
+                                    Multiple Use Capabilities
+                                </li>
+                            </ul>
+                            <a href="#!" class="btn features__btn"
+                                >Get Started</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- Feedback -->
+            <section class="feedback">
+                <div class="container">
+                    <div class="feedback__header">
+                        <p class="section-label">Our Testimonial</p>
+                        <h2 class="section-heading">What Clients Says</h2>
+                        <p class="section-desc feedback__desc">
+                            Read what clients says about us and about our online
+                            banking services that may inspire you
+                        </p>
+                    </div>
+                    <ul class="feedback__list">
+                        <li class="feedback-item">
+                            <p class="feedback-item__text">Fantastic platform for online banking. The best online banking platform I have used. Payments, loans, and money transfers have never been so much easier before. I am very much happy about this great online bank.</p>
+                            <figure class="feedback-item__author">
+                                <img src="./assets/img/feedback-01.png" alt="" class="feedback-item__avt">
+                            </figure>
+                            <p class="feedback-item__name">Alastair Cook</p>
+                            <p class="feedback-item__job">Businessmen</p>
+                        </li>
+                        <li class="feedback-item">
+                            <p class="feedback-item__text">Fantastic platform for online banking. The best online banking platform I have used. Payments, loans, and money transfers have never been so much easier before. I am very much happy about this great online bank.</p>
+                            <figure class="feedback-item__author">
+                                <img src="./assets/img/feedback-02.png" alt="" class="feedback-item__avt">
+                            </figure>
+                            <p class="feedback-item__name">Alastair Foaks</p>
+                            <p class="feedback-item__job">Businessmen</p>
+                        </li>
+                    </ul>
+                    <div class="feedback__dots">
+                        <div class="feedback__dot feedback__dot--active"></div>
+                        <div class="feedback__dot"></div>
+                        <div class="feedback__dot"></div>
+                    </div>
+                </div>
+            </section>
+            <section class="blog">
+                <div class="container">
+                    <div class="blog__header row">
+                        <div class="blog__header-info">
+                            <p class="section-label">Our Blog</p>
+                            <h2 class="section-heading">Get The Updates</h2>
+                            <p class="section-desc blog__desc">Read our blog for the regular updates about us and about our online banking services that may inspire you</p>
+                        </div>
+                        <a href="#!" class="blog__more btn">Read All</a>
+                    </div>
+                    <div class="blog__list">
+                        <!-- item 1 -->
+                        <article class="blog-item">
+                            <figure class="blog-item__thumb">
+                                <a href="#!"><img src="./assets/img/blog-01.jpeg" alt="" class="blog-item__img"></a>
+                            </figure>
+                            <section class="blog-item__content">
+                               <time class="blog-item__date">July 03, 2022</time>
+                                <a href="#!">
+                                    <h3 class="blog-item__title">Online bank is the best and secure way to save in the future...</h3>
+                                </a>
+                                <a href="#!" class="blog-item__more blog-item__more--active">Read Blog</a>
+                            </section>
+                        </article>
+                        <!-- item 2 -->
+                        <article class="blog-item">
+                            <figure class="blog-item__thumb">
+                                <a href="#!"><img src="./assets/img/blog-02.jpeg" alt="" class="blog-item__img"></a>
+                            </figure>
+                            <section class="blog-item__content">
+                               <time class="blog-item__date">July 03, 2022</time>
+                                <a href="#!">
+                                    <h3 class="blog-item__title">Why do you need to open a bank account in online..</h3>
+                                </a>
+                                <a href="#!" class="blog-item__more blog-item__more--active">Read Blog</a>
+                            </section>
+                        </article>
+                        <!-- item 3 -->
+                        <article class="blog-item">
+                            <figure class="blog-item__thumb">
+                                <a href="#!"><img src="./assets/img/blog-03.jpeg" alt="" class="blog-item__img"></a>
+                            </figure>
+                            <section class="blog-item__content">
+                               <time class="blog-item__date">July 03, 2022</time>
+                                <a href="#!">
+                                    <h3 class="blog-item__title">The benefits that we get from credit card at anytime...</h3>
+                                </a>
+                                <a href="#!" class="blog-item__more blog-item__more--active">Read Blog</a>
+                            </section>
+                        </article>
+                        <!-- item 4 -->
+                        <article class="blog-item">
+                            <figure class="blog-item__thumb">
+                                <a href="#!"><img src="./assets/img/blog-04.jpeg" alt="" class="blog-item__img"></a>
+                            </figure>
+                            <section class="blog-item__content">
+                               <time class="blog-item__date">July 03, 2022</time>
+                                <a href="#!">
+                                    <h3 class="blog-item__title">How to manage your money in online in this busy days...</h3>
+                                </a>
+                                <a href="#!" class="blog-item__more blog-item__more--active">Read Blog</a>
+                            </section>
+                        </article>
+                    </div>
+                </div>
+               
+            </section>
+        </main>
+    </body>
 </html>

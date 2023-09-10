@@ -1,18 +1,96 @@
 :root {
-
+    --primary-color: #7264d6;
+    --second-primary-color: #212832;
 }
 
 * {
     box-sizing: border-box;
+    margin: 0;
 }
 
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    font-family: 'Open Sans', sans-serif;
-} 
+    font-family: "Open Sans", sans-serif;
+}
 
 body {
     font-size: 1.6rem;
     scroll-behavior: smooth;
 }
+
+a {
+    text-decoration: none;
+}
+
+form,
+input,
+label,
+button {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    width: 1170px;
+    max-width: calc(100% - 48px);
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    --height: 58px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    height: var(--height);
+    min-width: 150px;
+    text-align: center;
+    background: var(--second-primary-color);
+    color: #fff !important;
+    border-radius: 6px;
+    border: 1px solid transparent;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.section-label {
+    display: inline-flex;
+    margin-bottom: 12px;
+    align-items: center;
+    color: #696d77;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
+
+.section-label::before {
+    content: "";
+    display: inline-block;
+    margin-right: 12px;
+    width: 18px;
+    height: 2px;
+    background: #696d77;
+}
+
+.section-heading {
+    color: var(--second-primary-color);
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.25;
+}
+
+.section-desc {
+    margin-top: 20px;
+    color: #696d76;
+    font-size: 1.8rem;
+    line-height: 1.66;
+}
+
