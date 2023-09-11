@@ -775,3 +775,151 @@
 .blog-item__more:hover {
     color: var(--primary-color);
 }
+
+/* Apps */
+
+.apps {
+    margin-top: 160px;
+    padding-bottom: 100px;
+}
+
+.apps__inner {
+    position: relative;
+    background: var(--primary-color);
+    padding: 100px 112px;
+    text-align: center;
+    border-radius: 24px;
+}
+
+.apps__label,
+.apps__heading,
+.apps__desc {
+    color: #fff;
+}
+
+.apps__desc {
+    margin: 0 auto;
+    margin-top: 18px;
+    width: 435px;
+}
+
+.apps__link {
+    min-width: 182px;
+    margin-top: 38px;
+    background: #fff;
+}
+
+.apps__link + .apps__link {
+    margin-left: 14px;
+}
+
+.apps__decor-icon {
+    position: absolute;
+}
+.apps__decor-icon:first-child {
+    position: absolute;
+    top: 50px;
+    left: 112px;
+}
+
+.apps__decor-icon:nth-child(2) {
+    position: absolute;
+    top: 50px;
+    right: 112px;
+}
+
+.apps__decor-icon:nth-child(3) {
+    position: absolute;
+    bottom: 50px;
+    left: 166px;
+}
+
+.apps__decor-icon:nth-child(4) {
+    position: absolute;
+    bottom: 50px;
+    right: 166px;
+}
+
+/* footer */
+.footer {
+    background: #fafbff;
+}
+
+.footer__inner {
+    padding: 100px 0 40px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) auto;
+    column-gap: 162px;
+}
+
+.footer__title {
+    color: #212832;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1.666;
+}
+
+.footer__list {
+    margin-top: 24px;
+}
+
+.footer-item {
+    margin-top: 10px;
+}
+.footer__add-link:hover,
+.footer__link:hover {
+    color: var(--primary-color);
+}
+
+.footer__add-link,
+.footer__add,
+.footer__link {
+    color: #6a6e78;
+    font-size: 1.8rem;
+    line-height: 1.66;
+}
+
+.footer__add {
+    margin: 24px 0 48px;
+}
+
+.footer__add-link {
+    text-decoration: underline;
+}
+
+.footer-form {
+    display: flex;
+    margin-top: 24px;
+}
+
+.footer-form__input {
+    padding: 12px;
+    height: 52px;
+    width: 270px;
+    border-radius: 6px;
+    border: 1px solid #8e919a;
+}
+
+.footer-form__input::placeholder {
+    color: #8e919a;
+    font-size: 1.6rem;
+}
+
+.footer-form__submit {
+    margin-left: 20px;
+    min-width: 113px;
+    height: 52px;
+    background: var(--primary-color);
+}
+
+.footer__bottom {
+    padding: 28px;
+    background: var(--primary-color);
+    text-align: center;
+}
+
+.copyright {
+    color: #fff;
+    font-size: 1.6rem;
+    line-height: 1.75;
+}
